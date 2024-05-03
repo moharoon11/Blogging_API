@@ -1,0 +1,28 @@
+project-image: E:\BloggingApi Post Images
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root123
+    url: jdbc:mysql:///Blogging_Database
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+      
+ 
+## application.yml
+#jwt:
+#  secret: jwtTokenSecretKey
+#  expiration: 3600000 # Token expiration time in milliseconds (e.g., 1 hour)
+
+        
